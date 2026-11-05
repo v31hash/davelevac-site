@@ -18,3 +18,5 @@
     status.textContent = 'Form handler not connected yet';
   });
 })();
+
+document.querySelector("#year").textContent = new Date().getFullYear();
