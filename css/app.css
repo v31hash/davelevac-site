@@ -308,6 +308,8 @@
   }
 
   .tile {
+    /* display: grid;
+    grid-template-rows: 180px auto auto; */
     margin: 0;
     aspect-ratio: 4 / 3;
     background: linear-gradient(135deg, var(--navy-2), var(--navy)); color: #fff;
@@ -326,11 +328,28 @@
     background: linear-gradient(135deg, #7a5a00, #4a3700);
   }
 
-  .tile span {
+  .tile img {
+    padding-bottom: 5px;
+  }
+  .tile p {
+    padding: 0;
+    margin: 0;
+  }
+  .tile p:nth-child(2n) {
+    color: var(--gold-soft);
+    font-size: .8rem;
+    letter-spacing: .06em;
+    text-transform: uppercase;
+  }
+  .tile p:nth-child(3n) {
+    padding: 0;
+    margin: 0;
     font-family: var(--serif);
     font-size: 1.05rem;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
   }
-
   .tile small {
     color: var(--gold-soft);
     font-size: .8rem;
